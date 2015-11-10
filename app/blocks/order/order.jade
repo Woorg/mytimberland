@@ -1,0 +1,6 @@
+include ../order-form/order-form
+
+mixin order()
+	+b('section').order
+		+e('h2').title ЗАКАЗАТЬ
+		+order-form()

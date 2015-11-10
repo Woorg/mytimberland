@@ -1,8 +1,9 @@
-include ../fork/fork
-include ../dark/dark
 
 mixin footer()
-	.footer
-		+dark()
-			.footer__copyright
-				| ©felixexter, 2013&mdash;2015
+	+b('footer').footer
+		+e.in
+			+e.logo My timberland
+			+e.phone +7 495 220 34 11
+			+e.phone +7 985 220 34 11
+			+e('a')('mailto:').link напишите нам 
+

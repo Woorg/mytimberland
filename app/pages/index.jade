@@ -1,9 +1,19 @@
-include ../blocks/index/index
+include ../blocks/hero/hero
+include ../blocks/benefits/benefits
+include ../blocks/how/how
+include ../blocks/catalog/catalog
+include ../blocks/order/order
+
 
 extends ../blocks/layout-default/layout-default
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Mytimberland';
 
 block content
-	+index()
+	+hero()
+	+benefits()
+	+how()
+	+catalog()
+	+order()
+	

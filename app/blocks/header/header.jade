@@ -1,16 +1,14 @@
-include ../logo/logo
-include ../dark/dark
-include ../title/title
-include ../description/description
-
 mixin header()
-	.header
-		+logo()
-
-		.header__title
-			+dark()
-				+title()
-					| CSSSR Project Template
-
-		+description()
-			| Шаблон проекта для быстрого старта.
+	+b.header
+		+e.in
+			+b('a')(href='#').logo MYTIMBERLAND
+			+b('ul').menu
+				+e('li').i
+					+e('a')(href='#' title='#').a ГЛАВНАЯ
+				+e('li').i
+					+e('a')(href='#' title='#').a ВЫГОДА
+				+e('li').i
+					+e('a')(href='#' title='#').a КАК МЫ РАБОТАЕМ
+				+e('li').i
+					+e('a')(href='#' title='#').a МОДЕЛИ
+			+b('a')(href='#').button ОБРАТНЫЙ ЗВОНОК

@@ -1,0 +1,11 @@
+mixin order-form()
+	+b.order-form
+		+e('h3').title Оставьте свои данные и мы перезвоним вам!
+
+		form(action="" method="post")
+			+e.input
+				input(type="text" placeholder='Ваше имя*' value='')
+			+e.input
+				input(type="text" placeholder='Ваш номер телефона*' value='')
+			+e.submit
+				input(type="submit" value='ЗАКАЗАТЬ ЗВОНОК')
